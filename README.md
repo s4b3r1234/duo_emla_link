@@ -14,3 +14,6 @@ The time is formatted according to the Emlalock WIKI (which has the information 
 So if you wanted to add 4 days for a failure to study then you would type D4
 
 Lastly you need to set what time to run, in 24 hours format.
+
+
+Oh, right, also, I'm not responsible if this breaks and adds loads of time to your lock. Use at your own risk!
