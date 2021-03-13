@@ -1,0 +1,17 @@
+[DUOLINGO]
+# Username can be found in the app in your profile. I'm not sure if it works with email.
+duo_user = UserName
+duo_pass = Sup3rS#cretPass
+
+[EMLALOCK]
+emlalock_user_id = sdf09g867fsdg
+emlalock_user_api = asdfg089
+emlalock_holder_api =
+
+# Time can be setup in <TypeValue> such as W1 for 1 week, or D1 for 1 day. Can also do minutes and seconds.
+duration_add = W1
+duration_sub = W1
+
+[RUNTIME]
+# Make sure the time format is 24:00. This sets what time each day the streak check is performed.
+time_to_run = 14:23
