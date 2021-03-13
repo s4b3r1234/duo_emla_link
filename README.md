@@ -15,5 +15,41 @@ So if you wanted to add 4 days for a failure to study then you would type D4
 
 Lastly you need to set what time to run, in 24 hours format.
 
+You will need python3 and pip3 for this to work. 
+
+#Install all dependencies
+$ pip3 install -r requirements.txt --user
+
+This can be ran directly from the terminal as:
+$ nohup python3 duolingo_emlalock.py config.txt &
+
+Or it can be installed as a service. On Ubuntu-based distro:
+
+#Move duolingo_emlalock.service file to proper folder
+
+$ sudo mv ./etc/systemd.system/duolingo_emlalock.service /etc/systemd/system/
+
+#Move the script into a system accesible folder for better configuration
+
+$ sudo mkdir -p /usr/local/lib/duolingo_emlalock/ && sudo mv ./duolingo_emlalock.py /usr/local/lib/duolingo_emlalock/
+
+#Update systemd
+
+$ sudo systemctl daemon-reload
+
+#Check that the service loaded
+
+$ sudo systemctl list-unit-files | grep duo
+
+If you decide to run it as a service you will have to edit the duolingo_emlalock.service file and add in the location of your config.txt file:
+
+ExecStart=/usr/bin/python3 /usr/local/lib/duolingo_emlalock/duolingo_emlalock.py /path/to/your/config.txt
+
+
+
+
+
+
+
 
 # Oh, right, also, I'm not responsible if this breaks and adds loads of time to your lock. Use at your own risk!
