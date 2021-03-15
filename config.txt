@@ -6,7 +6,8 @@ duo_pass = Sup3rS#cretPass
 [EMLALOCK]
 emlalock_user_id = sdf09g867fsdg
 emlalock_user_api = asdfg089
-emlalock_holder_api =
+# If you are using this with the subtract time option you will have to uncomment this line and fill the value.
+#emlalock_holder_api =
 
 # Time can be setup in <TypeValue> such as W1 for 1 week, or D1 for 1 day. Can also do minutes and seconds.
 duration_add = W1
